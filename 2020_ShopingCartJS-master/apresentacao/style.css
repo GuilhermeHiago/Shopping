@@ -1,0 +1,61 @@
+
+h1{
+  color:rgb(190, 118, 10);
+  width: 100%;
+  text-align: center;
+}
+
+legend[id^="leg"]{
+  color:rgb(88, 9, 77);
+  font-size: small;
+  font-weight: bolder;
+  text-align: center;
+  ;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  letter-spacing: 1px;
+  font-size: 1.0rem;
+}
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+td {
+  text-align: center;
+}
+caption {
+  padding: 10px;
+}
+
+.center {
+  margin: auto;
+  width: 70%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

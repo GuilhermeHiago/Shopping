@@ -1,0 +1,3 @@
+class PersisteVendas {
+  PersisteVenda(venda) {}
+}

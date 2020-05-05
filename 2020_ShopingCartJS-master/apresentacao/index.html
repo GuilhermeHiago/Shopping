@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ACME`s Shopping Cart</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!--script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></!--script -->
+  </head>
+
+  <body>
+    <div id="mainPage">
+      <h1>ACME`s Shopping Cart</h1>
+      <div>
+        <label for="produtos">Selecione um produto:</label><br />
+        <select id="produtos" name="produtos">
+          <!-- Preenchido pelo método exibe produtos-->
+        </select>
+        <label for="quantidade"> Quantidade: </label>
+        <input id="quantidade" , size="5" />
+        <br />
+        <br />
+        <button id="butAdd">Add</button>
+        <button id="butRemove">Remove</button><br />
+        <button id="butCheckout">Checkout</button><br />
+      </div>
+      <br />
+      <table id="tabela">
+        <tr>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Valor</th>
+        </tr>
+      </table>
+      <br />
+      <label id="total">Preço Bruto: R$ 0.00 </label><br />
+      <label id="desconto">Desconto: R$ 0.00 </label><br />
+      <label id="ICMS">ICMS: R$ 0.00 </label><br />
+      <label id="entrega">Entrega: R$ 0.00 </label><br />
+      <label id="ISSQN">ISSQN: R$ 0.00 </label><br />
+      <label id="final">Valor Final: R$ 0.00 </label><br />
+    </div>
+
+    <!-- Persistência -->
+    <script type="text/javascript" src="..\persistencia\ProdutoDTO.js"></script>
+    <script type="text/javascript" src="..\persistencia\VendaDTO.js"></script>
+    <script
+      type="text/javascript"
+      src="..\persistencia\PersisteVendas.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="..\persistencia\CadastroProduto.js"
+    ></script>
+
+    <!-- Negócios -->
+    <script
+      type="text/javascript"
+      src="..\negocio\EntidadeDTOConverter.js"
+    ></script>
+    <script type="text/javascript" src="..\negocio\TipoMoeda.js"></script>
+    <script type="text/javascript" src="..\negocio\Moeda.js"></script>
+    <script type="text/javascript" src="..\negocio\Produto.js"></script>
+    <script type="text/javascript" src="..\negocio\ItemCart.js"></script>
+    <script type="text/javascript" src="..\negocio\Cart.js"></script>
+
+    <!-- Apresentação -->
+    <script type="text/javascript" src=".\script.js"></script>
+  </body>
+</html>
